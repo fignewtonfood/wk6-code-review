@@ -18,7 +18,7 @@ Output: Bear sleeps.
 
 5) Replace one word with multiple words
 Input: Anteater sleeps.
-Output: Anteater sleeps and dreams.
+Output: Anteater snoozes and dreams.
 
 6) Replace multiple words with one word
 Input: Anteater sleeps.
@@ -27,3 +27,7 @@ Output: Wow!
 7) Replace multiple words with multiple words
 Input: Anteater sleeps.
 Output: Bear grills.
+
+8) Replace multiple instances
+Input: anteater and anteater
+Output: bear and bear
