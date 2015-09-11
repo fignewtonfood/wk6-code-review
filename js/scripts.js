@@ -1,5 +1,5 @@
-var cntBy = function(target, increment) {
-
+var replacement = function(phrase, toFind, toReplace ) {
+    return "a";
 };
 
 
