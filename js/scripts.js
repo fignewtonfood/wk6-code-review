@@ -1,5 +1,5 @@
 var replacement = function(phrase, toFind, toReplace ) {
-    return "a";
+    return phrase.replace(toFind, toReplace);
 };
 
 
