@@ -1,5 +1,5 @@
 var replacement = function(phrase, toFind, toReplace ) {
-    return phrase.replace(toFind, toReplace);
+    return phrase.replace(new RegExp(toFind, 'gi'),toReplace);
 };
 
 
