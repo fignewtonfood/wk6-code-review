@@ -1,0 +1,29 @@
+SPEC SHEET FOR WORD REPLACER
+
+1) Print input with no changes
+Input: A
+Output: A
+
+2) Replace one letter with another
+Input: A
+Output: B
+
+3) Replace one word with another
+Input: Anteater
+Output: Bear
+
+4) Replace one word in string with another word
+Input: Anteater sleeps.
+Output: Bear sleeps.
+
+5) Replace one word with multiple words
+Input: Anteater sleeps.
+Output: Anteater sleeps and dreams.
+
+6) Replace multiple words with one word
+Input: Anteater sleeps.
+Output: Wow!
+
+7) Replace multiple words with multiple words
+Input: Anteater sleeps.
+Output: Bear grills.
