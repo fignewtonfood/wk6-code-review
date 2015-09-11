@@ -1,22 +1,19 @@
-var replacement = function(phrase, toFind, toReplace ) {
-    return phrase.replace(new RegExp(toFind, 'gi'),toReplace);
+var replacement = function(phrase, toFind, toReplace) {
+    return phrase.replace(new RegExp('\\b'+toFind+'\\b', 'gi'),toReplace);
 };
 
 
-// $(document).ready(function() {
-//     $("form#cntby").submit(function(event){
-//         var target = parseInt($("input#target").val());
-//         var increment = parseInt($("input#increment").val());
-//
-//         var answer = cntBy(target, increment);
-//         var arraylength = answer.length;
-//
-//
-//         $(".length").text(arraylength);
-//
-//         $(".output").text(answer.join(", "));
-//
-//         $("#result").show();
-//         event.preventDefault();
-//     });
-// });
+$(document).ready(function() {
+    $("form#replacement").submit(function(event){
+        var phrase = $("textarea#phrase").val();
+        var toFind = $("input#tofind").val();
+        var toReplace = $("input#toreplace").val();
+
+        var answer = replacement(phrase, toFind, toReplace);
+
+        $(".output").text(answer);
+
+        $("#result").show();
+        event.preventDefault();
+    });
+});

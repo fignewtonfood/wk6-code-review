@@ -19,15 +19,15 @@ describe('replace function tests', function() {
         expect(replacement("Anteater sleeps.","sleeps","snoozes and dreams")).to.equal("Anteater snoozes and dreams.");
     });
 
-    it("replace multiple words with one word", function () {
-        expect(replacement("Anteater sleeps.","Anteater sleeps.","Wow!")).to.equal("Wow!");
-    });
-
     it("replace multiple words with multiple words", function () {
         expect(replacement("Anteater sleeps.","Anteater sleeps","Bear grills")).to.equal("Bear grills.");
     });
 
     it("replace multiple instances", function () {
         expect(replacement("anteater and anteater", "anteater", "bear")).to.equal("bear and bear");
+    });
+
+    it("replace whole word only", function () {
+        expect(replacement("I will fix this", "I", "You")).to.equal("You will fix this");
     });
 });
